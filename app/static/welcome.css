@@ -1,0 +1,205 @@
+/* Toggle buttons for login/register */
+.login-register-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 36px;
+}
+.toggle-btn {
+    background: #eaf6ff;
+    color: #2d8cf0;
+    border: 1.5px solid #2d8cf0;
+    border-radius: 5px;
+    padding: 10px 32px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+.toggle-btn.active, .toggle-btn:hover {
+    background: #2d8cf0;
+    color: #fff;
+}
+/* Login/Register wrapper */
+.login-register-wrapper {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    margin-top: 36px;
+    flex-wrap: wrap;
+}
+.login-card, .register-card {
+    background: #f9fafc;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+    padding: 32px 28px 28px 28px;
+    max-width: 370px;
+    min-width: 300px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.register-card h2 {
+    text-align: center;
+    color: #2d3e50;
+    margin-bottom: 22px;
+    font-size: 1.5rem;
+}
+.register-card .form-group {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+}
+.register-card label {
+    margin-bottom: 6px;
+    color: #4a5a6a;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.register-card input[type="text"],
+.register-card input[type="password"],
+.register-card input[type="url"] {
+    padding: 10px 12px;
+    border: 1px solid #dbe2ea;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #fff;
+    transition: border 0.2s;
+}
+.register-card input:focus {
+    border: 1.5px solid #2d8cf0;
+    outline: none;
+}
+.register-card button[type="submit"] {
+    margin-top: 10px;
+    width: 100%;
+    background: #2d8cf0;
+    color: #fff;
+    border: none;
+    padding: 12px 0;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+.register-card button[type="submit"]:hover {
+    background: #1867c0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 500px;
+    margin: 80px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 40px 30px;
+    text-align: center;
+}
+
+h1 {
+    color: #2d3e50;
+    margin-bottom: 16px;
+}
+
+p {
+    color: #4a5a6a;
+    margin-bottom: 24px;
+}
+
+button {
+    background: #2d8cf0;
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #1867c0;
+}
+
+#infoBox {
+    margin-top: 20px;
+    background: #eaf6ff;
+    padding: 16px;
+    border-radius: 6px;
+    color: #1867c0;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Login Card Styling */
+.login-card {
+    background: #f9fafc;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+    padding: 32px 28px 28px 28px;
+    margin: 36px auto 0 auto;
+    max-width: 370px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.login-card h2 {
+    text-align: center;
+    color: #2d3e50;
+    margin-bottom: 22px;
+    font-size: 1.5rem;
+}
+.login-card .form-group {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+}
+.login-card label {
+    margin-bottom: 6px;
+    color: #4a5a6a;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.login-card input[type="text"],
+.login-card input[type="password"],
+.login-card input[type="url"] {
+    padding: 10px 12px;
+    border: 1px solid #dbe2ea;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #fff;
+    transition: border 0.2s;
+}
+.login-card input:focus {
+    border: 1.5px solid #2d8cf0;
+    outline: none;
+}
+.login-card button[type="submit"] {
+    margin-top: 10px;
+    width: 100%;
+    background: #2d8cf0;
+    color: #fff;
+    border: none;
+    padding: 12px 0;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+.login-card button[type="submit"]:hover {
+    background: #1867c0;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Integration Content</title>
+    <link rel="stylesheet" href="/static/dashboard.css">
+</head>
+<body>
+    <button id="logoutBtn" class="logout-btn">Logout</button>
+    <div class="dashboard-container">
+        <h1>Integration Dashboard</h1>
+        <div class="dashboard-summary-cards">
+            <div class="summary-card" id="cardPackages">
+                <div class="summary-title">Packages</div>
+                <div class="summary-value" id="numPackages">0</div>
+            </div>
+            <div class="summary-card" id="cardArtifacts">
+                <div class="summary-title">Runtime Artifacts</div>
+                <div class="summary-value" id="numArtifacts">0</div>
+            </div>
+            <div class="summary-card" id="cardStarted">
+                <div class="summary-title">Artifacts Started</div>
+                <div class="summary-value" id="numStarted">0</div>
+            </div>
+            <div class="summary-card" id="cardError">
+                <div class="summary-title">Artifacts with Error</div>
+                <div class="summary-value" id="numError">0</div>
+            </div>
+        </div>
+        <div class="dashboard-buttons">
+            <button id="btnIntegrationContent">Get  Packages</button>
+            <button id="btnArtifactDetails">Get RuntimeArtifacts</button>
+            <button id="btnDeployStatus">Get artifacts details</button>
+        </div>
+        <div id="dashboardTableContainer">
+            <!-- Table will be rendered here -->
+        </div>
+        <div id="cellModal" class="cell-modal">
+            <div class="cell-modal-content">
+                <span id="closeModal" class="cell-modal-close">&times;</span>
+                <pre id="modalText"></pre>
+            </div>
+        </div>
+    </div>
+    <script src="/static/dashboard.js"></script>
+</body>
+</html>
