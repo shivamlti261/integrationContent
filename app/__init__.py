@@ -151,7 +151,7 @@ def create_app():
         r.set("T"+username, token, ex=expires_in)
         return jsonify({"message":"user logged in successfully","Token": token}), 200
         
-    @app.route('/get_integration_content', methods=['GET'])
+    @app.route('/get_integration_content', methods=['POST'])
     def get_integration_content():
         """
         get username and token from body
@@ -178,7 +178,7 @@ def create_app():
             return redirect(url_for('logout'))
         return Response(response.text, content_type=response.headers.get('Content-Type'))
     
-    @app.route('/IntegrationRuntimeArtifacts', methods=['GET'])
+    @app.route('/IntegrationRuntimeArtifacts', methods=['POST'])
     def get_integration_runtime_artifacts():
         """
             verify user
@@ -204,7 +204,7 @@ def create_app():
         
         return Response(response.text, content_type=response.headers.get('Content-Type'))
     
-    @app.route("/MessageMappingDesigntimeArtifacts", methods=['GET'])
+    @app.route("/MessageMappingDesigntimeArtifacts", methods=['POST'])
     def get_runtime_artifact_details():
 
         """
@@ -231,7 +231,7 @@ def create_app():
             return redirect(url_for('logout'))
         return Response(response.text, content_type=response.headers.get('Content-Type'))
     
-    @app.route("/ValueMappingDesigntimeArtifacts", methods=['GET'])
+    @app.route("/ValueMappingDesigntimeArtifacts", methods=['POST'])
     def get_value_mapping_designtime_artifacts():
         """
             verify user
